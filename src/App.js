@@ -28,9 +28,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Form Practice</h1>
-        <form>
+      <div className="container mt-5 text-center">
+        <form className="container">
+          <h1>Forms Practice</h1>
           <input
             type="text"
             name="firstName"
@@ -63,7 +63,7 @@ class App extends React.Component {
               name="isAustralian"
               checked={this.state.isAustralian}
               onChange={this.handleChange}
-            /> Is Australian?
+            /> Are you Australian?
           </label>
           <br />
           <br />
@@ -97,13 +97,16 @@ class App extends React.Component {
             <option value="blue">Blue</option>
             <option value="red">Red</option>
           </select>
-          <hr />  
+          <br />
+          <button className=" btn btn-primary">Submit</button>
+        </form>
+        <div className="results container mt-5">
           <h1>Full name: {this.state.firstName} {this.state.lastName}</h1>
           <h2>About you: {this.state.description}</h2>
           <h2>Nationality: {this.state.isAustralian ? "Australian" : "Other"}</h2>
           <h2>Sex: {this.state.gender}</h2>
           <h2>Favorite color: {this.state.favColor}</h2>
-        </form>
+        </div>
       </div>
     )
   }

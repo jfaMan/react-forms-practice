@@ -1,0 +1,15 @@
+body {
+  margin: 32px;
+}
+
+form {
+  border: 1px solid grey;
+  box-shadow: 2px 2px grey;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px:
+}
+
+form h1 {
+  margin-bottom: 32px;
+}
