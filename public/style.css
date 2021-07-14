@@ -2,14 +2,35 @@ body {
   margin: 32px;
 }
 
-form {
-  border: 1px solid grey;
-  box-shadow: 2px 2px grey;
+form, .results {
+  width: 100%;
   border-radius: 8px;
-  padding: 16px;
-  margin: 16px:
+  padding: 32px;
+  margin: 32px;
 }
 
-form h1 {
-  margin-bottom: 32px;
+h1 {
+  margin-bottom: 32px !important;
+  text-align: center;
+}
+
+label { 
+  margin: 0px 8px;
+}
+
+.btn {
+  margin: 16px 0px;
+}
+
+.container-main {
+  margin: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 }
