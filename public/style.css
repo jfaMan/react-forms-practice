@@ -3,10 +3,9 @@ body {
 }
 
 form, .results {
-  width: 100%;
   border-radius: 8px;
   padding: 32px;
-  margin: 32px;
+  margin: 48px;
 }
 
 h1 {
@@ -20,12 +19,13 @@ label {
 
 .btn {
   margin: 16px 0px;
+  width: 100%;
 }
 
 .container-main {
   margin: 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .questions {
@@ -33,4 +33,19 @@ label {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+}
+
+li {
+  list-style-type: none;
+  margin: 8px 0px;
+}
+
+input {
+  margin: 16px;
+}
+
+.btn-container { 
+  height: auto;
+  display: flex;
+  align-items: center;
 }
